@@ -9,26 +9,32 @@ What all it include ?
 It include all the source code of every damn file, including the latest LIVE SCORE pages too.
 
 Some of important files can be found at :
-addr.php  -> Main code which actually adds a new user on the website.
+<b>addr.php  </b> -> Main code which actually adds a new user on the website.
 
-updater.php -> Updates the user information whenever some one change his/her name, etc.
+<b>updater.php </b>-> Updates the user information whenever some one change his/her name, etc.
 
-update_user_rank folder -> Include the script which updates the user ranks.
+<b>update_user_rank folder </b> -> Include the script which updates the user ranks.
 
-update_user_submissions folder -> Includes the script which updates all the submissions automatically.
+<b>update_user_submissions folder  </b>-> Includes the script which updates all the submissions automatically.
 
+<br><br>
+<b>Liked the code or the website ??</b>
 
-Liked the code or the website ??
 Please let me know by liking :
+
 http://www.facebook.com/okrdx
 
 
-Feel free to contact me :
+<b>Feel free to contact me :</b>
 
 http://www.facebook.com/skbly7
+
 skbly7@gmail.com
 
-
+<h3>
 At last my pet line.. :D
+<br>
 Happy programming..!!
+<br>
 :)
+</h3>
