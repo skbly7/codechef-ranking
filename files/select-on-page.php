@@ -178,6 +178,11 @@ echo '
 			<option value="152" data-alternative-spellings="Manipal">Manipal University Jaipur</option>
 			<option value="153" data-alternative-spellings="Haldia">Haldia Institute of Technology, Midnapore</option>
 			<option value="154" data-alternative-spellings="DDU">Dharmsinh Desai University, Nadiad</option>
+			<option value="155" data-alternative-spellings="BITS">Birla Institute of Technology Hyderabad</option>
+			<option value="156" data-alternative-spellings="PCCOE">Pimpri Chinchwad College of Engineering, Pune</option>
+			<option value="157" data-alternative-spellings="VCET">Vidyavardhinis College of Engineering and Technology</option>
+			<option value="158" data-alternative-spellings="RMKEC">RMK Engineering College</option>
+			<option value="159" data-alternative-spellings="Bangalore">PES Institute of Technology, Bangalore</option>
 			</SELECT>
 			<INPUT type="submit" value="Submit">
 			</form>

@@ -780,6 +780,46 @@ $college['college']=-1;
 	//$college_name="BCETDGP' id='logo'>";
 	echo "<img align='center'  src='http://www.okrdx.com/college/151.jpg' id='logo'>";
 	}
+	else if($college['college']==152)
+	{
+	echo "<img align='center'  src='http://www.okrdx.com/college/152.jpg' id='logo'>";
+	}
+	else if($college['college']==153)
+	{
+	echo "<img align='center'  src='http://www.okrdx.com/college/153.png' id='logo'>";
+	}
+	else if($college['college']==154)
+	{
+	echo "<img align='center'  src='http://www.okrdx.com/college/154.jpg' id='logo'>";
+	}
+	else if($college['college']==155)
+	{
+	echo "<img align='center'  src='http://www.okrdx.com/college/155.gif' id='logo'>";
+	}
+	else if($college['college']==156)
+	{
+	echo "<img align='center'  src='http://www.okrdx.com/college/156.jpg' id='logo'>";
+	}
+	else if($college['college']==157)
+	{
+	echo "<img align='center'  src='http://www.okrdx.com/college/157.jpg' id='logo'>";
+	}
+	else if($college['college']==158)
+	{
+	echo "<img align='center'  src='http://www.okrdx.com/college/158.jpg' id='logo'>";
+	}
+	else if($college['college']==159)
+	{
+	echo "<img align='center'  src='http://www.okrdx.com/college/159.gif' id='logo'>";
+	}
+	else if($college['college']==151)
+	{
+	echo "<img align='center'  src='http://www.okrdx.com/college/151.jpg' id='logo'>";
+	}
+	else if($college['college']==151)
+	{
+	echo "<img align='center'  src='http://www.okrdx.com/college/151.jpg' id='logo'>";
+	}
 	else
 	{
 	$value=0;
@@ -845,9 +885,15 @@ echo '<div id="main"><table class="problems" cellpadding="0" cellspacing="0" wid
 	<th style="text-align: center;" width="30%">User</th>
 	<th style="text-align: right;" width="15%">Score</th>	
 </tr>';
+$q= 'SELECT detail.handle,detail.country,'.$contest.'.score FROM detail,'.$contest.' WHERE detail.college='.$college['college'].' AND detail.handle=SUBSTR('.$contest.'.handle,4) ORDER BY '.$contest.'.score desc LIMIT '.$from.',10';
+//echo $q;
+$sql=mysql_query($q) OR die("Error:".mysql_error());
+if(mysql_num_rows($sql)<1)
+{
 $q= 'SELECT detail.handle,detail.country,'.$contest.'.score FROM detail,'.$contest.' WHERE detail.college='.$college['college'].' AND detail.handle=SUBSTR('.$contest.'.handle,6) ORDER BY '.$contest.'.score desc LIMIT '.$from.',10';
 //echo $q;
-$sql=mysql_query($q);
+$sql=mysql_query($q) OR die("Error:".mysql_error());
+}
 while($i = mysql_fetch_array($sql))
 {
 	echo '<tr class="row">

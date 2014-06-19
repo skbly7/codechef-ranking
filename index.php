@@ -118,7 +118,9 @@ complete.innerHTML='<div style="text-align:center;font-size:20px;background-colo
 		
 		<div class="content">
 <div id="fb-root"></div> <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
-<div class="fb-post" data-href="https://www.facebook.com/okrdx/posts/572471636176336" data-width="466"><div class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/okrdx/posts/572471636176336">Post</a> by <a href="https://www.facebook.com/okrdx">Codechef Ranking</a>.</div></div>
+<div class="fb-post" data-href="https://www.facebook.com/photo.php?fbid=610708765685956&amp;set=a.505414129548754.1073741829.491033864320114&amp;type=1" data-width="466"><div class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/photo.php?fbid=610708765685956&amp;set=a.505414129548754.1073741829.491033864320114&amp;type=1">Post</a> by <a href="https://www.facebook.com/okrdx">Codechef Ranking</a>.</div></div>
+
+
 
 			<h1>Welcome to OKRDX</h1>
 			<p>CodeChef is a global programming community. They host contests, trainings and events for programmers around the world. Their goal is to provide a platform for programmers everywhere to meet, compete, and have fun. CodeChef is a noncommercial organization operated by Directi, an Indian software company based in Mumbai, India.</p>			
@@ -145,7 +147,7 @@ complete.innerHTML='<div style="text-align:center;font-size:20px;background-colo
 		</div>
 
 			<div class="sidenav">
-			<div id="complete"></div>
+			<!--<div id="complete"></div>-->
 <div><center><h2>Download<br/>Chrome Extension<br/><a href="download.php"><img src="img/chrome.png" alot="Google Chrome" width="200" height="200"/></a></h2></center></div>
 		</div>
 

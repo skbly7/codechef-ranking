@@ -291,8 +291,8 @@ if($value&&is_numeric($value))
 	}
 	else if($value==58)
 	{
-	$college_name="SVIT";
-	$img="58.jpg";
+	$college_name="SPIT";
+	$img="58.png";
 	}
 	else if($value==59)
 	{
@@ -773,6 +773,31 @@ if($value&&is_numeric($value))
 	{
 	$college_name="Dharmsinh University";
 	$img="154.jpg";
+	} 
+	else if($value==155)
+	{
+	$college_name="BITS Hyderabad";
+	$img="155.gif";
+	}
+	else if($value==156)
+	{
+	$college_name="PCCOE";
+	$img="156.jpg";
+	}
+ 	else if($value==157)
+	{
+	$college_name="VCET";
+	$img="157.jpg";
+	}
+  	else if($value==158)
+	{
+	$college_name="RMKEC";
+	$img="158.jpg";
+	}
+   	else if($value==159)
+	{
+	$college_name="PES";
+	$img="159.gif";
 	} 
 	else
 	{

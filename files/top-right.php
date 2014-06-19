@@ -23,12 +23,35 @@ echo "<script type='text/javascript'>
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>";
+</script>
+";
+?>
+<!-- begin olark code -->
+<script data-cfasync="false" type='text/javascript'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
+f[z]=function(){
+(a.s=a.s||[]).push(arguments)};var a=f[z]._={
+},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
+f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
+0:+new Date};a.P=function(u){
+a.p[u]=new Date-a.p[0]};function s(){
+a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
+hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
+return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
+b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
+b.contentWindow[g].open()}catch(w){
+c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
+var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
+b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
+loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify('9004-268-10-5164');/*]]>*/</script><noscript><a href="https://www.olark.com/site/9004-268-10-5164/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
+<!-- end olark code -->
+<?php
+echo '<div style="position:absolute;top:0;right:0;"><a href="https://github.com/skbly7/codechef-ranking"><img src="img/fork.png"></a></div>';
 if (isset($_COOKIE["College"]))
 {
 $show=0;
 $value=$_COOKIE["College"];
-$value=preg_replace('/[^a-zA-Z0-9_ %\[\]\.\(\)%&-]/s', '', $value);
 if($value==0)
 $show=1;
 else
@@ -201,6 +224,11 @@ echo '
 			<option value="152" data-alternative-spellings="Manipal">Manipal University Jaipur</option>
 			<option value="153" data-alternative-spellings="Haldia">Haldia Institute of Technology, Midnapore</option>
 			<option value="154" data-alternative-spellings="DDU">Dharmsinh Desai University, Nadiad</option>
+			<option value="155" data-alternative-spellings="BITS">Birla Institute of Technology Hyderabad</option>
+			<option value="156" data-alternative-spellings="PCCOE">Pimpri Chinchwad College of Engineering, Pune</option>
+			<option value="157" data-alternative-spellings="VCET">Vidyavardhinis College of Engineering and Technology</option>
+			<option value="158" data-alternative-spellings="RMKEC">RMK Engineering College</option>
+			<option value="159" data-alternative-spellings="Bangalore">PES Institute of Technology, Bangalore</option>
 				</SELECT>
 				<INPUT type="submit" value="Submit">
 			</form>
