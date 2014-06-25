@@ -812,13 +812,17 @@ $college['college']=-1;
 	{
 	echo "<img align='center'  src='http://www.okrdx.com/college/159.gif' id='logo'>";
 	}
-	else if($college['college']==151)
+	else if($college['college']==160)
 	{
-	echo "<img align='center'  src='http://www.okrdx.com/college/151.jpg' id='logo'>";
+	echo "<img align='center'  src='http://www.okrdx.com/college/160.jpg' id='logo'>";
 	}
-	else if($college['college']==151)
+	else if($college['college']==161)
 	{
-	echo "<img align='center'  src='http://www.okrdx.com/college/151.jpg' id='logo'>";
+	echo "<img align='center'  src='http://www.okrdx.com/college/161.jpg' id='logo'>";
+	}
+	else if($college['college']==162)
+	{
+	echo "<img align='center'  src='http://www.okrdx.com/college/162.jpg' id='logo'>";
 	}
 	else
 	{
