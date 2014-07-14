@@ -884,10 +884,10 @@ echo "<script type='text/javascript'>
 echo '<div id="main"><table class="problems" cellpadding="0" cellspacing="0" width="100%">
 <tbody id="new">
 <tr class="headerrow">
-	<th style="text-align: left;" width="10%">Rank</th>
+	<th style="text-align: left;padding-left: 3px;" width="10%">Rank</th>
 	<th style="text-align: center;" width="15%">Country</th>
 	<th style="text-align: center;" width="30%">User</th>
-	<th style="text-align: right;" width="15%">Score</th>	
+	<th style="text-align: right;padding-right: 3px;" width="15%">Score</th>	
 </tr>';
 $q= 'SELECT detail.handle,detail.country,'.$contest.'.score FROM detail,'.$contest.' WHERE detail.college='.$college['college'].' AND detail.handle=SUBSTR('.$contest.'.handle,4) ORDER BY '.$contest.'.score desc LIMIT '.$from.',10';
 //echo $q;
@@ -904,10 +904,10 @@ while($i = mysql_fetch_array($sql))
 					<td align="center">'.$sno++.'</td>
 					<td align="center"><img src="http://codechef_shared.s3.amazonaws.com/download/flags/24/'.strtolower($i['country']).'.png"></td>
 					<td align="center"><a class="link" target="_blank" href="http://www.codechef.com/users/'.$i['handle'].'">'.$i['handle'].'</a></td>
-					<td class="slang" align="right">'.$i['score'].'</td>
+					<td class="slang" style="padding-right: 3px;" align="right">'.$i['score'].'</td>
 				</tr>';
 }
-echo '<tr class="row"></tr><tr class="row"><td align="left" style="padding:10px;">';
+echo '<tr class="row"><td align="left" style="padding:10px;">';
 if($save!=1)
 echo '<div id="btn"><a href="plugin.php?user='.$user.'&page='.($save-1).'&contest='.$contest.'">Previous</a></div>';
 echo '</td><td align="right">
