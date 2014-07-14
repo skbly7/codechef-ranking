@@ -824,6 +824,18 @@ $college['college']=-1;
 	{
 	echo "<img align='center'  src='http://www.okrdx.com/college/162.jpg' id='logo'>";
 	}
+	else if($college['college']==163)
+	{
+	echo "<img align='center'  src='http://www.okrdx.com/college/163.png' id='logo'>";
+	}
+	else if($college['college']==164)
+	{
+	echo "<img align='center'  src='http://www.okrdx.com/college/164.jpg' id='logo'>";
+	}
+	else if($college['college']==165)
+	{
+	echo "<img align='center'  src='http://www.okrdx.com/college/165.JPG' id='logo'>";
+	}
 	else
 	{
 	$value=0;
