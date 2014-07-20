@@ -901,12 +901,12 @@ echo '<div id="main"><table class="problems" cellpadding="0" cellspacing="0" wid
 	<th style="text-align: center;" width="30%">User</th>
 	<th style="text-align: right;padding-right: 3px;" width="15%">Score</th>	
 </tr>';
-$q= 'SELECT detail.handle,detail.country,'.$contest.'.score FROM detail,'.$contest.' WHERE detail.college='.$college['college'].' AND detail.handle=SUBSTR('.$contest.'.handle,4) ORDER BY '.$contest.'.score desc LIMIT '.$from.',10';
+$q= 'SELECT detail.handle,detail.country,'.$contest.'.score FROM detail,'.$contest.' WHERE detail.college='.$college['college'].' AND detail.handle=SUBSTR('.$contest.'.handle,4) ORDER BY '.$contest.'.rank asc LIMIT '.$from.',10';
 //echo $q;
 $sql=mysql_query($q) OR die("Error:".mysql_error());
 if(mysql_num_rows($sql)<1)
 {
-$q= 'SELECT detail.handle,detail.country,'.$contest.'.score FROM detail,'.$contest.' WHERE detail.college='.$college['college'].' AND detail.handle=SUBSTR('.$contest.'.handle,6) ORDER BY '.$contest.'.score desc LIMIT '.$from.',10';
+$q= 'SELECT detail.handle,detail.country,'.$contest.'.score FROM detail,'.$contest.' WHERE detail.college='.$college['college'].' AND detail.handle=SUBSTR('.$contest.'.handle,6) ORDER BY '.$contest.'.rank asc LIMIT '.$from.',10';
 //echo $q;
 $sql=mysql_query($q) OR die("Error:".mysql_error());
 }
