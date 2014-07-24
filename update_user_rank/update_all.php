@@ -93,6 +93,8 @@ include "../connect.php";
 		{
 		$rank[3]=0;
 		}
+		if($rank[3]=="")
+		$rank[3]=0;
 //		echo $handle." Ranks are : ".$rank[0]." , ".$rank[1]." , ".$rank[2]." , ".$rank[3].'<br>';
 //$sql = 'UPDATE detail SET rank1='.$rank[0].', rank2='.$rank[1].' WHERE handle="'.$handle.'"';
 $sql = 'UPDATE detail SET old_rank1=rank1,rank1='.$rank[0].' WHERE (rank1>'.$rank[0].' OR rank1<'.$rank[0].' ) AND handle="'.$handle.'"';
