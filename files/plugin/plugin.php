@@ -14,10 +14,39 @@ $sno=$from+1;
 }
 else
 {
-$from=1;
+$from=1; 
 $end=10;
 }
 
+$new_add = "SELECT 1 FROM `".$contest."` LIMIT 1;";
+    $result_new = mysql_query($new_add);
+
+if( $result_new == false)
+{
+	echo "
+<body bgcolor='black' style='padding-top:40px;'><script type='text/javascript'>
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36157444-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<center>
+<div style='font-size:20px;text-align:center;width:150px;color:white;'>
+<b>Sorry</b><br>The contest has<b> not started</b> yet on Codechef.
+</div><div id='new2' style='text-align:left;font-size:20px;width:150px;margin-top:20px;'>
+<br><br><br><a href='http://fb.com/okrdx' target='_blank'><img src='icon.png' width=150></a>
+</div>
+</center></body>";
+}
+else
+{
 
 $sql='SELECT detail.college FROM detail WHERE detail.handle="'.$user.'"';
 $result=mysql_query($sql);
@@ -836,6 +865,10 @@ $college['college']=-1;
 	{
 	echo "<img align='center'  src='http://www.okrdx.com/college/165.JPG' id='logo'>";
 	}
+	else if($college['college']==166)
+	{
+	echo "<img align='center'  src='http://www.okrdx.com/college/166.jpg' id='logo'>";
+	}
 	else
 	{
 	$value=0;
@@ -845,7 +878,6 @@ $college['college']=-1;
 
 
 <link type="text/css" rel="stylesheet" media="all" href="style.css" />
-
 <?php
 
 if($college['college']==-1)
@@ -928,5 +960,6 @@ if($sno%10==1&&$college['college']!=-1)
 echo '<div id="btn"><a href="plugin.php?user='.$user.'&page='.($save+1).'&contest='.$contest.'">Next</a></div>';
 echo '</td></tr></tbody></div>';
 
+}
 }
 ?>
